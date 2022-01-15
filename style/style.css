@@ -113,6 +113,21 @@ nav{
 	}
 }
 
+
+
+
+/*..................... brand section start here....... */
+.brand{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 10px 80px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    
+}
+
+
+
 /*................. Reusable code here......................... */
 a{
     text-decoration: none;
@@ -173,7 +188,8 @@ p{
 
 
 
-/*................. media query strat here..................... */
+/*................. media query strat here.....................
+................................................................ */
 
 @media (max-width:950px){
     .heading{
@@ -188,6 +204,15 @@ p{
         width:90%;
         
     }
+
+
+    .brand{
+       grid-template-columns: repeat(4 , 1fr);
+    }
+
+    .brand a img{
+
+    }
 }
 
 
@@ -197,6 +222,11 @@ p{
         line-height: 40px;
 
     }
+
+ header{
+     margin-bottom: 150px;
+ }
+  
 
 }
 
@@ -246,6 +276,15 @@ p{
         margin-left: 70px;
         
     }
+
+    /* brand section */
+
+    
+    .brand {
+        width: 100%;
+        padding: 15px 0;
+        
+     }
    
 
 }
@@ -256,5 +295,8 @@ p{
     .heading{
         font-size: 30px;
     }
+
+  
+
 }
 
