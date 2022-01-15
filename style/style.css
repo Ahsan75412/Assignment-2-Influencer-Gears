@@ -16,12 +16,6 @@ html{
 }
 
 
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 25px;
-}
-
 nav{
    display: flex; 
    justify-content: space-between;
@@ -50,12 +44,101 @@ nav{
     padding: 15px 10px;
     transition: all .5s;
 }
+.nav-bar li a.active{
+    color: #E02C6D ;
+}
+
 
 .nav-bar li a:hover{
     color:  #E02C6D;
        
 }
 
+/*.............. banner section start here................ */
+
+.banner-section{
+    height: calc(100vh - 75px);
+    min-height: 500px;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+}
+
+.banner-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.banner-left{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.common{
+    margin: 20px 0;
+}
+
+/* animation */
+
+.top-animation:hover{
+    animation: float 1.5s ease-in-out infinite;
+}
+
+
+@keyframes float {
+	0% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(-40px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
 
 /*................. Reusable code here......................... */
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
+h1{
+    font-size: 52px;
+    line-height: 70px;
+    font-weight: 700;
+    color: #3A3A3A;
+    text-transform:capitalize;
+}
+
+p{
+    color: gray;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.main-btn{
+    background-color: #E02C6D;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 3px 0 #a5075e;  
+      
+}
+
+.arrow{
+    margin-left: 5px;
+}
 
