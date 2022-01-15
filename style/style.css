@@ -11,6 +11,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body{
+    background: #f6f3f3fb;
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -123,7 +127,61 @@ nav{
     padding: 10px 80px;
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
+    margin-bottom: 70px;
     
+}
+
+
+/*.......... populer section style start here........ */
+.title-text{
+    font-size: 40px;
+    font-weight: 600;
+   text-align: center;
+   margin-bottom: 50px;
+}
+.popular-collection{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* padding-left: 60px; */
+}
+.product-card{
+    background: #FFFFFF;
+    height: 400px;
+    width: 265px;
+    border-radius: 10px; 
+    margin-bottom: 20px;
+
+}
+
+.product-card img{
+    width: 250px;
+    padding-top: 15px;
+    padding-left: 14px;
+    border-radius: 5px;
+    
+ 
+}
+.product-card h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.p-left{
+    padding-left: 12px;
+}
+
+.font{
+    font-weight: 500;
+}
+
+.fa-star{
+    color: #FB8200;
+    font-size: 14px;
+}
+
+span{
+    font-weight: 500;
+    margin-left: 15px;
 }
 
 
@@ -136,6 +194,7 @@ a{
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 30px;
+    
 }
 
 h1{
@@ -190,12 +249,12 @@ p{
 
 /*................. media query strat here.....................
 ................................................................ */
-
-@media (max-width:950px){
+@media (max-width:990px){
     .heading{
         font-size: 40px;
         line-height: 50px;
     }
+
     p{
         font-size: 14px; 
     }
@@ -210,10 +269,16 @@ p{
        grid-template-columns: repeat(4 , 1fr);
     }
 
-    .brand a img{
+    
 
-    }
+  
+    
+
 }
+
+
+
+
 
 
 @media (max-width:830px){
@@ -226,7 +291,12 @@ p{
  header{
      margin-bottom: 150px;
  }
+
+  /* popular section */
   
+  .popular-collection{
+    grid-template-columns: repeat(2, 1fr);
+  }
 
 }
 
@@ -291,12 +361,30 @@ p{
 
 /*.............. for small device ......................*/
 
-@media (max-width:600px){
+@media (max-width:670px){
     .heading{
         font-size: 30px;
     }
 
-  
+    .brand a img{
+        width:50%
+        
+     }
 
+     .popular-collection{
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 100px;
+       
+      }
+   
 }
 
+
+@media (max-width:430px){
+    
+    .popular-collection{
+        padding-left: 50px;
+       
+      }
+
+}
